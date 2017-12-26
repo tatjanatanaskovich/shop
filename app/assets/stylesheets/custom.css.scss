@@ -1,0 +1,117 @@
+$navbar-default-bg: #1F5B99;
+
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+#logo  {
+  float: left;
+  font-size: 1.7em;
+  color: #E3D87C;
+  text-shadow: 1px 1px #8B66C3;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  font-weight: bold;
+}
+
+#logo:hover  {
+  color: #E3D87C;
+  text-shadow: 1px 1px red;
+  text-decoration:none;
+}
+
+.navbar-default {
+  text-shadow: 0.5px 0.5px #E3D87C;
+  font-size: 1.3em;
+}
+
+.center  {
+  text-align: center;
+}
+
+.jumbotron  {
+  background-image: asset-url('knjiga-cvece.jpg');
+  /*background-image: asset-url('new_cover_page.jpg');*/
+  background-size: cover;
+  height: 550px;
+}
+
+.jumbotron h1   {
+  color: #FFEED0;
+  text-shadow: 2px 2px #1F5B99;
+  text-align: center;
+  margin-bottom: 30px;
+  letter-spacing: -1px;
+  font-weight: bold;
+}
+
+.btn-xlarge   {
+  font-size: 1.7em;
+  background-color: #1F5B99;
+  color: #E3D87C;
+  text-shadow: 0.5px 0.5px red;
+}
+
+.product-meta-details {
+  border-top:1px solid #eaeaea;
+  margin-top: 15px;
+}
+
+.product-actions {
+  border-top:1px solid #eaeaea;
+  padding-top: 5px;
+}
+
+.price {
+  margin-top: 0;
+}
+
+.product-name   {
+  font-weight:bold;
+  font-size: 1.5em;
+}
+
+.product-body   {
+  border-top: 1px solid #eaeaea;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.listing {
+  list-style: none;
+  padding-left: 0;
+}
+
+.badge {
+  background-color: #CEF6F5;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  font-weight: bold;
+}
+
+.input_checkbox input {
+  width: auto !important;
+}
+
+footer   {
+  margin-top: 45px;
+  padding-top:5px;
+  border-top: 1px solid #eaeaea;
+  color: #777;
+}
+
+footer a:hover   {
+  color: #222;
+}
+
+footer small   {
+  float: left;
+}
+
+footer ul   {
+  float: right;
+  list-style: none;
+}
+footer ul li {
+  float: left;
+  margin-left: 15px;
+}

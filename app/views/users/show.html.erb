@@ -1,0 +1,12 @@
+<h1 align="center">Welcome to <%= @user.name %>'s page</h1>
+<div class="row">
+  
+</div>
+<h4 align="center"><%= @user.name %>'s products</h4>
+<div class="center">
+  <%= will_paginate @user_products %>
+</div>
+<%= render 'products/product', obj: @user_products %>
+<div class="center">
+  <%= will_paginate @user_products %>
+</div>
