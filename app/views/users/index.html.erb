@@ -9,7 +9,7 @@
           <li class="product-title">
             <%= link_to user.name, user_path(user) %>
           </li>
-          <li><small><%= pluralize(user.products.count, "article") if user.products %></small></li>
+          <li><small><%= pluralize(user.products.count, "product") if user.products %></small></li>
           <% if logged_in? and current_user.admin? %>
             <li><%= link_to "Delete this user", user_path(user), method: :delete,
                   data: { confirm: "Are you sure? With this action you will delete user and all his products!" } %></li>
