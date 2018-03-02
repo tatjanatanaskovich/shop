@@ -3,20 +3,24 @@ class ProductsController < ApplicationController
   before_action :require_user, except: [:index, :show]
   before_action :require_same_user, only: [:edit, :update, :destroy]
   
+  # GET /products
   def index
     @products = Product.paginate(page: params[:page], per_page: 5)
   end
   
+  # GET /products/new
   def new
     @product = Product.new
   end
   
+  
+  # GET /products/1/edit
   def edit
     
   end
   
+  # PATCH/PUT /products/id
   def update
-   
     if @product.update(product_params)
       flash[:success] = "Product was successfully updated!"
       redirect_to product_path(@product)
@@ -25,6 +29,7 @@ class ProductsController < ApplicationController
     end
   end
   
+  # POST /products
   def create
        @product = Product.new(product_params)
     @product.user = current_user
@@ -36,12 +41,13 @@ class ProductsController < ApplicationController
     end
   end
   
+  # GET /products/id
   def show
    
   end
   
+  #DELETE /products/id
   def destroy
-    
     @product.destroy
     flash[:danger] = "Product was successfully deleted!"
     redirect_to product_path
@@ -50,10 +56,12 @@ class ProductsController < ApplicationController
   
   private
   
+    # Use callbacks to share common setup or constraints between actions.
     def set_product
       @product = Product.find(params[:id])
     end
     
+    # Whitelist of params
     def product_params
     params.require(:product).permit(:name, :price)
     end
