@@ -1,3 +1,9 @@
-# This is the repository for my Shop app. 
-> It is one simple, prototype app for learning Ruby on Rails Web Development.
-### Production link for app on Heroku: https://shop-tatjana.herokuapp.com/
+ # Time app
+
+->This is the repository for my Shop app. 
+-
+-It is one simple, prototype app for learning Ruby on Rails Web Development.
+-### Production link for app on Heroku:
+-
+-- https://shop-tatjana.herokuapp.com/
+
