@@ -1,4 +1,4 @@
-  SHOP
+== Shop
 
 This is the repository for my Shop app. 
 It is one simple, prototype app for learning Ruby on Rails Web Development.
